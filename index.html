@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link ref="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <section>
+      <h1 id="title">Survey Form</h1>
+      <p class="description" id="description">
+        Thank you for helping us improve!
+      </p>
+    </section>
+    <section>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name"
+          >Name:
+          <input
+            id="name"
+            type="text"
+            placeholder="Martin Gutierrez"
+            required
+          />
+        </label>
+        <label id="email-label" for="email"
+          >Email:
+          <input
+            id="email"
+            type="email"
+            placeholder="email123@gmail.com"
+            required
+          />
+        </label>
+        <label id="number-label" for="number"
+          >Phone number:
+          <input
+            id="number"
+            type="number"
+            min="10000000"
+            max="9999999999999"
+            placeholder="011 1523641726"
+          />
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown"
+          >Product you bougth:
+          <select id="dropdown">
+            <option>(select one)</option>
+            <option>SpaceVPX Boards</option>
+            <option>FMC Mezzanine Cards</option>
+            <option>IP Cores & Drivers</option>
+            <option>Backplanes / SpaceUM</option>
+            <option>Mechanical Parts</option>
+            <option>Support Hardware and Tools</option>
+            <option>Application Software</option>
+            <option>Subsystems</option>
+          </select>
+        </label>
+        <p>How satisfied are you with your product?</p>
+        <label for="satisfied">
+          <input
+            class="inline"
+            id="satisfied"
+            name="satisfaction-level"
+            type="radio"
+            value="1"
+          />
+          Satisfied
+        </label>
+        <label for="neutral">
+          <input
+            class="inline"
+            id="neutral"
+            name="satisfaction-level"
+            type="radio"
+            value="2"
+          />
+          Neutral
+        </label>
+        <label for="unsatisfied">
+          <input
+            class="inline"
+            id="unsatisfied"
+            name="satisfaction-level"
+            type="radio"
+            value="3"
+          />
+          Unsatisfied
+        </label>
+        <label for="very-unsatisfied">
+          <input
+            class="inline"
+            id="very-unsatisfied"
+            name="satisfaction-level"
+            type="radio"
+            value="4"
+          />
+          Very Unsatisfied
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>Valuable features from the product you bought:</p>
+        <label for="quality">
+          <input class="inline" id="quality" type="checkbox" value="1" />
+          Quality
+        </label>
+        <label for="price">
+          <input class="inline" id="price" type="checkbox" value="2" /> Price
+        </label>
+        <label for="service">
+          <input class="inline" id="service" type="checkbox" value="3" />
+          Service
+        </label>
+        <label for="other">
+          <input class="inline" id="other" type="checkbox" value="4" /> Other
+        </label>
+        <label class="comments" for="comments"
+          >Please let us know any other comments:
+          <textarea id="comments" rows="3" cols="30"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+    </section>
+  </body>
+</html>
